@@ -1,5 +1,3 @@
-# connected.horse
-Here a code for Heltec esp32-lora module based dataloger for [connected.horse][ch] project. This software acquire raw data from adxl335 analog accelerometer, apply set of feature calculation functions  and send it with LoRa to LoRa gateway. Data acqustition made by ULP co-processor for lower power consumption
-
-[ch]:http://connected.horse
-
+# TTGO esp32-lora + MPU6050 data logger
+After power on sends udp stream to 192.168.1.110:5555. To recieve and store run recieve.py
+Sampling rate 50 Hz, format ts:ax:ay:az:gx:gy:gz:yaw:pitch:roll
